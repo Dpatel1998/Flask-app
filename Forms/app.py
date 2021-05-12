@@ -24,7 +24,7 @@ def register():
         if len(first_name) == 0 or len(last_name) == 0:
             error = "Please supply both first and last name"
         else:
-            return ('thank_you')
+            return f"('Thank You')
 
     return render_template('home.html', form=form, message=error)
 
