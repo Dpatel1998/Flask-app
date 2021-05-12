@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block my_new_block %}
+
+{% for user in users %} 
+
+    {% if user[0] == "b" %}
+
+        {{ users }} 
+
+    {% endif %}
+
+{% endfor %} 
+
+{% endblock my_new_block %} 

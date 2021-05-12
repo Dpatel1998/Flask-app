@@ -10,5 +10,10 @@ def ben():
 def harry():
     return render_template('harry.html')
 
+@app.route('/list')
+def _list():
+    list_1 = ["ben", "harry", "bob", "jay", "matt", "bill"] 
+    return render_template('list.html',users=list_1)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
